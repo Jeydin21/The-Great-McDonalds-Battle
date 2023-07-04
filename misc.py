@@ -1,15 +1,6 @@
 # The slowprint(string) function is not mine, I searched how to make this function online and got it from https://stackoverflow.com/a/54472904
 import random
 from misc import *
-import time
-import sys
-from termcolor import colored
-
-def slowprint(string):
-	for letter in string + '\n':
-		sys.stdout.write(letter)
-		sys.stdout.flush()
-		time.sleep(5./500)
 
 def read(filename):
   in_file = open("data/" + filename + ".txt", "r")
@@ -38,6 +29,3 @@ def choosestatement(filename):
   index = random.randrange(len(list))
   statement = list[index]
   return " ".join(statement)
-
-def printcolor(string, color):
-  print(colored(string, color))
