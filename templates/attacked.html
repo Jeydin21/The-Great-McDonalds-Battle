@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Karen Attacked You!</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.png">
+  </head>
+
+  <body>
+    <div class="transparent">
+      <center>
+        <h1>Karen Attacked You!</h1>
+        <br>
+        <p>{{data["attackedStatement"]}}</p>
+        <p>{{data["damagedStatement"]}}</p>
+        <p>Your HP: <b>{{data["yourHealth"]}}</b></p>
+        <p>Karen's HP: <b>{{data["karenHealth"]}}</b></p>
+        <br>
+        <br>
+        <a href="/battle" class="greenbutton">Continue</a>
+    </center>
+  </body>
